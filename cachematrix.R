@@ -37,7 +37,7 @@ if(!is.null(i)) {
 	}
 ## if no cache found then the below code will compute the inverse
 data <- x$get()
-i <- solve(data)
+i <- solve(data, ...)
 ## this will store the inverse of matrix in cache
 x$setinv(i)
 
